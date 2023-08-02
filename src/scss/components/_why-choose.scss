@@ -1,0 +1,92 @@
+
+
+.why-choose{
+    background-color: $primary;
+
+    &-row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:80px;
+        padding: 80px 0px;
+
+        .why-choose-head{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:10px;
+            color: $white;
+
+            &-title{
+                font-size: $xl;
+                font-weight: 700;
+                line-height: 57px;
+                letter-spacing: 0.2px;
+            }
+
+            &-desc{
+                font-size:$xs;
+                font-weight: 500;
+                line-height: 20px;
+                letter-spacing: 0.2px;
+            }
+        }
+
+        .why-choose-cards{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            &-card{
+                background-color: $secondary-300;
+                border-radius: 11px;
+
+                &-header{
+                    display: flex;
+                    gap:15px;
+                    align-items: center;
+                    padding: 30px 50px;
+                    font-size: $sm;
+                    font-weight: 700;
+                    line-height: 24px;
+                    letter-spacing: 0.1px;
+
+
+                    &-icon{
+                        width:72px;
+                        height:72px;
+                        background-color: $white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        font-size: $lg;
+                        color: $secondary;
+                    }
+                }
+
+                &-list{
+                    background-color: $white;
+                    border-radius: 11px;
+                    padding: 30px 50px;
+                    display: flex;
+                    flex-direction: column;
+                    gap:5px;
+
+                    &-item{
+                        color:#737373;
+                        font-weight: 600;
+                        font-size: $xs;
+                        line-height: 24px;
+                        letter-spacing: 0.2px;
+                    }
+
+                    &-item.more{
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+
+    }
+}

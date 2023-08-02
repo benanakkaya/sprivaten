@@ -1,0 +1,64 @@
+@import "../variables/index";
+
+.header {
+  .header-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $white;
+
+    .header-logo {
+      font-size: $lg;
+      font-weight: 700;
+    }
+
+    .header-col-right {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      .header-nav {
+        .header-nav-list {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          &-item {
+            &-link {
+                font-size: $xs;
+               font-weight: 600;
+               line-height: 24px;
+               letter-spacing: 0.2px;
+            }
+
+            &-link:hover {
+                color: $primary;
+            }
+          }
+        }
+      }
+
+      .header-buttons{
+        display: flex;
+        align-items: center;
+        gap:20px;
+        &-button {
+            cursor: pointer;
+            color:white;
+            display: flex;
+            align-items: center;
+            font-size: $md;
+        }
+
+        &-button.mobile-menu{
+            display: none;
+        }
+
+        &-button:hover{
+            color: $primary;
+        }
+      }
+    }
+  }
+}

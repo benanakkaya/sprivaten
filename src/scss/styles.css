@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px; }
+
+.header .header-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF; }
+
+.header .header-row .header-logo {
+  font-size: 24px;
+  font-weight: 700; }
+
+.header .header-row .header-col-right {
+  display: flex;
+  align-items: center;
+  gap: 40px; }
+
+.header .header-row .header-col-right .header-nav .header-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 20px; }
+
+.header .header-row .header-col-right .header-nav .header-nav-list-item-link {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px; }
+
+.header .header-row .header-col-right .header-nav .header-nav-list-item-link:hover {
+  color: #252B42; }
+
+.header .header-row .header-col-right .header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px; }
+
+.header .header-row .header-col-right .header-buttons-button {
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 20px; }
+
+.header .header-row .header-col-right .header-buttons-button.mobile-menu {
+  display: none; }
+
+.header .header-row .header-col-right .header-buttons-button:hover {
+  color: #252B42; }
+
+.hero {
+  background-image: url("src/assets/hero-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 823px; }
+
+.hero .bg-cover {
+  background: rgba(0, 0, 0, 0.4);
+  height: 823px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px; }
+
+.hero .bg-cover .hero-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.hero .bg-cover .hero-row .hero-col-left {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  color: #FFFFFF; }
+
+.hero .bg-cover .hero-row .hero-col-left-title {
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 80px;
+  letter-spacing: 0.2px; }
+
+.hero .bg-cover .hero-row .hero-col-left-desc {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.2px; }
+
+.hero .bg-cover .hero-row .hero-col-left-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px; }
+
+.hero .bg-cover .hero-row .hero-col-left-buttons-button {
+  border-radius: 37px;
+  padding: 10px 36px;
+  border: 1px solid transparent;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  cursor: pointer; }
+
+.hero .bg-cover .hero-row .hero-col-left-buttons-button.yellow-btn {
+  background-color: #FFA62B; }
+
+.hero .bg-cover .hero-row .hero-col-left-buttons-button.yellow-btn:hover {
+  background-color: rgba(255, 166, 43, 0.7); }
+
+.hero .bg-cover .hero-row .hero-col-left-buttons-button.transparent-btn {
+  border: 1px solid #FFFFFF; }
+
+.hero .bg-cover .hero-row .hero-col-right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: white;
+  color: #252B42;
+  border-radius: 10px;
+  padding: 40px; }
+
+.hero .bg-cover .hero-row .hero-col-right-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  text-align: center; }
+
+.hero .bg-cover .hero-row .hero-col-right-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; }
+
+.hero .bg-cover .hero-row .hero-col-right-form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px; }
+
+.hero .bg-cover .hero-row .hero-col-right-form-label-input {
+  color: #252B42;
+  padding: 10px 20px;
+  outline: none;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  background-color: #F9F9F9;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  font-size: 14px; }
+
+.hero .bg-cover .hero-row .hero-col-right-form-label-input::placeholder {
+  font-size: 14px;
+  color: #737373; }
+
+.hero .bg-cover .hero-row .hero-col-right-form-label-selectbox {
+  padding: 10px 20px;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  color: #737373;
+  outline: none; }
+
+.hero .bg-cover .hero-row .hero-col-right-form-button {
+  padding: 15px 40px;
+  background-color: #FFA62B;
+  color: #FFFFFF;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer; }
+
+.hero .bg-cover .hero-row .hero-col-right-form-button:hover {
+  background-color: rgba(255, 166, 43, 0.7); }
+
+.why-choose {
+  background-color: #252B42; }
+
+.why-choose-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  padding: 80px 0px; }
+
+.why-choose-row .why-choose-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #FFFFFF; }
+
+.why-choose-row .why-choose-head-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.2px; }
+
+.why-choose-row .why-choose-head-desc {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.2px; }
+
+.why-choose-row .why-choose-cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; }
+
+.why-choose-row .why-choose-cards-card {
+  background-color: #A9D6FF;
+  border-radius: 11px; }
+
+.why-choose-row .why-choose-cards-card-header {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 30px 50px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1px; }
+
+.why-choose-row .why-choose-cards-card-header-icon {
+  width: 72px;
+  height: 72px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 24px;
+  color: #00A0C1; }
+
+.why-choose-row .why-choose-cards-card-list {
+  background-color: #FFFFFF;
+  border-radius: 11px;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px; }
+
+.why-choose-row .why-choose-cards-card-list-item {
+  color: #737373;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px; }
+
+.why-choose-row .why-choose-cards-card-list-item.more {
+  color: #00A0C1; }
+
+* {
+  font-family: 'Montserrat', sans-serif; }

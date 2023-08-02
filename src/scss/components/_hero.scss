@@ -1,0 +1,158 @@
+@import "../variables/index";
+
+.hero {
+    background-image: url("src/assets/hero-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 823px;
+
+    .bg-cover {
+        background: rgba(0, 0, 0, 0.40);
+        height: 823px;
+        display: flex;
+        flex-direction: column;
+        gap:50px;
+        .hero-row{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        .hero-col-left {
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+            color: $white;
+
+            &-title{
+                font-size: $xl2;
+                font-weight: 800;
+                line-height: 80px;
+                letter-spacing: 0.2px;
+            }
+
+            &-desc{
+                font-size: $md;
+                font-weight: 500;
+                line-height: 30px;
+                letter-spacing: 0.2px;
+            }
+
+            &-buttons{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                &-button {
+                    border-radius: 37px;
+                    padding: 10px 36px;
+                    border: 1px solid transparent;
+                    color: $white;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 28px;
+                    letter-spacing: 0.2px;
+                    cursor: pointer;
+                }
+
+                &-button.yellow-btn{
+                    background-color: $warning;
+                }
+
+                &-button.yellow-btn:hover{
+                    background-color: rgba($warning, 0.7);
+                }
+
+                &-button.transparent-btn{
+                    border: 1px solid $white;
+                }
+            }
+        }
+
+        .hero-col-right {
+            display: flex;
+            flex-direction: column;
+            gap:40px;
+            background-color: white;
+            color:$primary;
+            border-radius: 10px;
+            padding: 40px;
+
+            &-title{
+                font-size:$lg;
+                font-weight: 700;
+                line-height: 32px;
+                letter-spacing: 0.1px;
+                text-align: center;
+            }
+
+            &-form{
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                &-label{
+                    display: flex;
+                    flex-direction: column;
+                    gap:10px;
+                    font-weight: 600;
+                    font-size:$xs;
+                    line-height: 24px;
+                    letter-spacing: 0.2px;
+
+                    &-input{
+                        color: $primary;
+                        padding: 10px 20px;
+                        outline: none;
+                        border: 1px solid $grey;
+                        border-radius: 5px;
+                        background-color: #F9F9F9;
+                        line-height: 28px;
+                        letter-spacing: 0.2px;
+                        font-size:$xs;
+                    }
+
+                    &-input::placeholder{
+                        font-size:$xs;
+                        color:#737373;
+                    }
+
+                    &-selectbox{
+                        padding: 10px 20px;
+                        border: 1px solid $grey;
+                        border-radius: 5px;
+                        color: #737373;
+                        outline: none;
+                    }
+
+
+
+
+                }
+
+                &-button{
+                    padding: 15px 40px;
+                    background-color: $warning;
+                    color: $white;
+                    font-weight: 700;
+                    line-height: 28px;
+                    letter-spacing: 0.2px;
+                    font-size: $xs;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+
+                &-button:hover{
+                    background-color: rgba($warning, 0.7);
+                }
+            }
+        }
+
+    }
+
+
+
+    }
+
+}
