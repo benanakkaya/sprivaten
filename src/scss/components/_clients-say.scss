@@ -1,0 +1,87 @@
+
+
+.clients-say {
+    background-color: $primary;
+    padding: 80px 0px;
+
+    .clients-say-row {
+        display: flex;
+        flex-direction: column;
+        gap:80px;
+        align-items: center;
+
+        .clients-say-header{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            align-items: center;
+            color: white;
+
+            &-title{
+                font-size: $xl;
+                line-height: 57px;
+                font-weight: 700;
+                letter-spacing: 0.2px;
+            }
+
+            &-text {
+                font-weight: 500;
+                font-size: $xs;
+                line-height: 20px;
+                letter-spacing: 0.2px;
+
+            }
+        }
+
+
+        .clients-say-content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap:32.5px;
+            &-card{
+                background-color: $white;
+                padding: 30px 35px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                border-radius: 5px;
+
+                &-rating {
+                    color:$golden;
+                }
+
+                &-comment {
+                    color: #737373;
+                }
+
+                &-profile {
+                    display: flex;
+                    align-items: center;
+                    gap:15px;
+
+                    &-info {
+                        display: flex;
+                        flex-direction: column;
+                        &-name{
+                            font-size: $xs;
+                            color: $warning;
+                            line-height: 24px;
+                            letter-spacing: 0.2px;
+                            font-weight: 600;
+
+                        }
+
+                        &-degree{
+                            color:$primary;
+                            font-weight: 600;
+                            line-height: 24px;
+                            letter-spacing: 0.2px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../Header/Header";
+import PrimaryButton from "../shared/PrimaryButton";
 
 const Hero = () => {
   return (
@@ -53,9 +54,7 @@ const Hero = () => {
                     </select>
                 </label>
             </form>
-            <button className="hero-col-right-form-button">
-                Book Appointment
-                </button>
+            <PrimaryButton text="Book Appointment" />
         </div>
       </div>
       </div>

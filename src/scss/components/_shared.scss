@@ -1,0 +1,19 @@
+
+
+.logo{
+        font-size: $lg;
+        font-weight: 700;
+}
+
+
+.primary-btn {
+    font-weight: 700;
+                font-size:$xs;
+                line-height: 28px;
+                letter-spacing: 0.2px;
+                background-color: $warning;
+                color: $white;
+                padding: 15px 40px;
+                border-radius: 5px;
+                cursor: pointer;
+}
