@@ -23,6 +23,11 @@
                 line-height: 57px;
                 font-weight: 700;
                 text-align: center;
+
+                @media screen and (max-width: $mobile) {
+                    text-align: center;
+                    
+                  }
             }
 
             &-text {
@@ -30,7 +35,10 @@
                 letter-spacing: 0.2px;
                 line-height: 20px;
                 font-weight: 500;
-
+                @media screen and (max-width: $mobile) {
+                    text-align: center;
+                    
+                  }
             }
 
 
@@ -41,6 +49,13 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            @media screen and (max-width: $mobile) {
+                flex-direction: column;
+                gap: 40px;
+                
+                
+              }
 
 
             &-card {

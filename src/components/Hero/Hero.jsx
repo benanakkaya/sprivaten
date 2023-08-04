@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Header/Header";
 import PrimaryButton from "../shared/PrimaryButton";
+import {motion} from "framer-motion"
 
 const Hero = () => {
   return (
@@ -8,7 +9,7 @@ const Hero = () => {
                 <div className="bg-cover">
       <Header />
       <div className="hero-row container">
-        <div className="hero-col-left">
+      <motion.div initial={{opacity:0}} animate={{opacity:1}}  className="hero-col-left">
           <div className="hero-col-left-title">We Take Care of the Future</div>
           <div className="hero-col-left-desc">
             We know how large objects will act, but things on a small scale.
@@ -18,11 +19,11 @@ const Hero = () => {
             Get Quote Now
             </button>
             <button className="hero-col-left-buttons-button transparent-btn">
-            Get Quote Now
+            Learn More
             </button>
           </div>
-        </div>
-        <div className="hero-col-right">
+        </motion.div>
+        <motion.div  initial={{opacity:0}} animate={{opacity:1}}  className="hero-col-right">
             <h3 className="hero-col-right-title">
             Book Appointment
             </h3>
@@ -55,7 +56,7 @@ const Hero = () => {
                 </label>
             </form>
             <PrimaryButton text="Book Appointment" />
-        </div>
+        </motion.div >
       </div>
       </div>
     </div>

@@ -1,8 +1,10 @@
 import React from 'react'
+import { itemVariant } from '../../../App';
+import {motion} from "framer-motion"
 
 const WhyChooseCard = ({card}) => {
   return (
-    <div className='why-choose-cards-card'>
+    <motion.div variants={itemVariant} className='why-choose-cards-card'>
         <div className="why-choose-cards-card-header">
             <span className='why-choose-cards-card-header-icon'>
                 {card.icon}
@@ -16,7 +18,7 @@ const WhyChooseCard = ({card}) => {
                 <a href='/'>
                 Learn More</a></li>
         </ul>
-    </div>
+    </motion.div>
   )
 }
 

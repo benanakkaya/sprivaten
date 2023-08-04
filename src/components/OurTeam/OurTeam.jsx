@@ -3,6 +3,8 @@ import imgTeam1 from "../../assets/team1.png";
 import imgTeam2 from "../../assets/team2.png";
 import imgTeam3 from "../../assets/team3.png";
 import OurTeamCard from './components/OurTeamCard';
+import {motion} from "framer-motion";
+import { containerVariant } from '../../App';
 
 const OurTeam = () => {
 
@@ -51,11 +53,14 @@ const OurTeam = () => {
                 Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics 
                 </p>
             </div>
-            <div className="our-team-content">
+            <motion.div initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.8 }}
+       variants={containerVariant} className="our-team-content">
                 {ourTeamMembers.map(member => (
-                    <OurTeamCard member={member} />
+                    <OurTeamCard key={member.id} member={member} />
                 ) )}
-            </div>
+            </motion.div>
         </div>
     </div>
   )

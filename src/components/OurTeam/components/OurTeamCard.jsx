@@ -4,10 +4,12 @@ import {
   AiOutlineLinkedin,
   AiOutlineTwitter,
 } from "react-icons/ai";
+import {motion} from "framer-motion"
+import { itemVariant } from "../../../App";
 
 const OurTeamCard = ({ member }) => {
   return (
-    <div className="our-team-content-card">
+    <motion.div variants={itemVariant} className="our-team-content-card">
       <img
         src={member.image}
         alt={member.name}
@@ -47,7 +49,7 @@ const OurTeamCard = ({ member }) => {
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

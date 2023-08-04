@@ -3,6 +3,8 @@ import imgClient1 from "../../assets/client1.png"
 import imgClient2 from "../../assets/client2.png"
 import imgClient3 from "../../assets/client3.png"
 import ClientsSayCard from './components/ClientsSayCard';
+import {motion} from "framer-motion"
+import { containerVariant } from '../../App';
 
 const ClientsSay = () => {
 
@@ -50,11 +52,14 @@ const ClientsSay = () => {
                 Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics 
                 </p>
             </div>
-            <div className="clients-say-content">
+            <motion.div initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.8 }}
+       variants={containerVariant}  className="clients-say-content">
                 {clientSaylist.map((item) => (
-                    <ClientsSayCard item={item} />
+                    <ClientsSayCard key={item.id} item={item} />
                 ))}
-            </div>
+            </motion.div>
         </div>
     </div>
   )

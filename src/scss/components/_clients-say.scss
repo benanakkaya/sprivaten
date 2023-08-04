@@ -22,6 +22,11 @@
                 line-height: 57px;
                 font-weight: 700;
                 letter-spacing: 0.2px;
+
+                @media screen and (max-width: $mobile) {
+                    text-align: center;
+                    
+                  }
             }
 
             &-text {
@@ -29,7 +34,10 @@
                 font-size: $xs;
                 line-height: 20px;
                 letter-spacing: 0.2px;
-
+                @media screen and (max-width: $mobile) {
+                    text-align: center;
+                    
+                  }
             }
         }
 
@@ -39,6 +47,12 @@
             justify-content: space-between;
             align-items: center;
             gap:32.5px;
+
+            @media screen and (max-width: $mobile) {
+                flex-direction: column;
+                gap: 40px;
+                
+              }
             &-card{
                 background-color: $white;
                 padding: 30px 35px;

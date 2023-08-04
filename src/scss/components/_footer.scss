@@ -36,9 +36,20 @@
             justify-content: space-between;
             padding: 70px 0px;
 
+            @media screen and (max-width: $mobile) {
+                flex-direction: column;
+                gap: 40px;
+              }
+
             &-col-left{
                 display: flex;
                 gap:50px;
+
+                @media screen and (max-width: $mobile) {
+                    flex-direction: column;
+
+                    gap: 40px;
+                  }
 
                 &-group{
                     display: flex;
@@ -67,15 +78,20 @@
                     flex-direction: column;
                     gap:20px;
 
+
+                    
                     &-title{
                         font-size: $sm;
                         font-weight: 700;
                         line-height: 24px;
                         letter-spacing: 0.1px;
+
+  
                     }
 
                     &-form{
                         border-radius: 5px;
+
 
                         &-input{
                             padding: 20px 15px;

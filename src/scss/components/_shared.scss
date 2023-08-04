@@ -16,4 +16,8 @@
                 padding: 15px 40px;
                 border-radius: 5px;
                 cursor: pointer;
+                @media screen and (max-width: $mobile) {
+                        width: 100%;
+                      }
+                
 }

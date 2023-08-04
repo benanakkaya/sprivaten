@@ -1,6 +1,10 @@
 @import "../variables/index";
 
 .header {
+
+  @media screen and (max-width: $mobile) {
+    background-color: $primary;
+  }
   .header-row {
     width: 100%;
     display: flex;
@@ -34,6 +38,10 @@
             }
           }
         }
+
+        @media screen and (max-width: $mobile) {
+          display: none;
+        }
       }
 
       .header-buttons{
@@ -50,11 +58,47 @@
 
         &-button.mobile-menu{
             display: none;
+
+            @media screen and (max-width: $mobile) {
+              display: flex;
+              align-items: center;
+            }
         }
+
+
 
         &-button:hover{
             color: $primary;
         }
+      }
+    }
+  }
+
+  .header-mobile-menu{
+    padding: 80px 20px;
+
+    @media screen and (min-width: $mobile) {
+      display: none;
+    }
+    
+
+    &-list{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+
+      &-item{
+        color: white;
+        font-size:30px;
+        line-height: 45px;
+        letter-spacing: 0.2px;
+
+        &:hover{
+          color: $warning;
+        }
+        
       }
     }
   }

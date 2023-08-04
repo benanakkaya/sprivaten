@@ -7,6 +7,25 @@ import ServiceVideo from "./components/ServiceVideo/ServiceVideo"
 import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs"
 
 
+export const containerVariant = {
+  onscreen: {
+    transition: {
+      staggerChildren: 0.1
+    }
+  }
+}
+
+export const itemVariant = {
+  offscreen: {
+    opacity:0,
+    translateY:20
+  },
+  onscreen: {
+    opacity:1,
+    translateY:0
+  }
+}
+
 function App() {
 
 

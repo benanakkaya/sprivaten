@@ -1,5 +1,7 @@
 import React from "react";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+import {motion} from "framer-motion"
+import { itemVariant } from "../../../App";
 
 const ClientsSayCard = ({ item }) => {
     
@@ -13,7 +15,7 @@ const ClientsSayCard = ({ item }) => {
   );
 
   return (
-    <div className="clients-say-content-card">
+    <motion.div variants={itemVariant} className="clients-say-content-card">
       <div className="clients-say-content-card-rating">
         {postiveRatingElements}
         {negativeRatingElements}
@@ -34,7 +36,7 @@ const ClientsSayCard = ({ item }) => {
           </small>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

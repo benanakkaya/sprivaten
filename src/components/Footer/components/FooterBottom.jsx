@@ -94,8 +94,8 @@ const FooterBottom = () => {
             </strong>
             <ul className="footer-row-bottom-col-left-group-list">
                 {list.items.map(item => (
-                <li className="footer-row-bottom-col-left-list-item">
-                    <a key={item.id} href={item.path}>
+                <li  key={item.id} className="footer-row-bottom-col-left-list-item">
+                    <a href={item.path}>
                         {item.title}
                     </a>
                 </li>

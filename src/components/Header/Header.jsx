@@ -1,12 +1,17 @@
+import { AnimatePresence } from "framer-motion";
 import React from "react";
+import { useState } from "react";
 import {
   AiOutlineMenu,
   AiOutlineSearch,
   AiOutlineShoppingCart,
 } from "react-icons/ai";
 import Logo from "../shared/Logo";
+import MobileMenu from "./components/MobileMenu";
 
 const Header = () => {
+  const [mobileMenuVisibility, setMobileMenuVisibility] = useState(false);
+
   const navItems = [
     {
       id: 1,
@@ -29,6 +34,10 @@ const Header = () => {
       path: "/",
     },
   ];
+
+  const handleMobileMenu = () => {
+    setMobileMenuVisibility((prev) => !prev);
+  };
 
   return (
     <header className="header">
@@ -53,12 +62,18 @@ const Header = () => {
             <button className="header-buttons-button">
               <AiOutlineShoppingCart />
             </button>
-            <button className="header-buttons-button mobile-menu">
+            <button
+              onClick={handleMobileMenu}
+              className="header-buttons-button mobile-menu"
+            >
               <AiOutlineMenu />
             </button>
           </div>
         </div>
       </div>
+      <AnimatePresence>
+      {mobileMenuVisibility && <MobileMenu items={navItems} />}
+      </AnimatePresence>
     </header>
   );
 };

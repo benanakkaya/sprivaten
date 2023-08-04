@@ -7,7 +7,7 @@ const ContactUsTop = () => {
         <div className="contact-us-cover">
         <div className="contact-us-row container">
             <div className="contact-us-header">
-                <h6 className="contact-us-subtitle">Contact Us</h6>
+                <h6 className="contact-us-header-subtitle">Contact Us</h6>
                 <h5 className="contact-us-header-title">Make an Appointment</h5>
             </div>
             <form className="contact-us-form">
@@ -24,7 +24,7 @@ const ContactUsTop = () => {
                     <option>15:00 Unavaible</option>
                     <option>17:00 Avaible</option>
                 </select>
-                <textarea className='contact-us-form-textarea' name="message" id="" cols="30" rows="10" />
+                <textarea placeholder='Message' className='contact-us-form-textarea' name="message" id="" cols="30" rows="10" />
             </form>
             <PrimaryButton text="Book Appointment" />
         </div>

@@ -3,6 +3,8 @@ import {MdWeb} from "react-icons/md";
 import {FaAward} from "react-icons/fa";
 import {CgShoppingBag} from "react-icons/cg";
 import WhyChooseCard from './components/WhyChooseCard';
+import {motion} from "framer-motion"
+import { containerVariant } from '../../App';
 
 const WhyChooseUs = () => {
 
@@ -103,11 +105,14 @@ const WhyChooseUs = () => {
 the two major realms of Classical physics: Newtonian mechanics 
           </p>
         </div>
-        <div className='why-choose-cards'>
+        <motion.div initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.8 }}
+       variants={containerVariant}  className='why-choose-cards'>
           {cards.map(card => (
             <WhyChooseCard key={card.id} card={card} />
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   )

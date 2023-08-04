@@ -21,6 +21,9 @@
                 font-weight: 700;
                 line-height: 57px;
                 letter-spacing: 0.2px;
+                @media screen and (max-width: $mobile) {
+                  text-align: center;
+                }
             }
 
             &-text{
@@ -28,15 +31,24 @@
                 font-weight: 500;
                 line-height: 20px;
                 letter-spacing: 0.2px;
+                @media screen and (max-width: $mobile) {
+                  text-align: center;
+                }
             }
         }
 
         .service-video-content{
             background-image: url("src/assets/video-cover.jpg");
             background-size:  cover;
+            background-position: center;
             height: 442px;
             width: 100%;
             cursor: pointer;
+            
+            @media screen and (max-width: $mobile) {
+              aspect-ratio: 16 / 9;
+              
+            }
 
             &-cover{
                 background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 14.58%, rgba(56, 56, 56, 0.84) 100%);
@@ -45,6 +57,10 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                @media screen and (max-width: $mobile) {
+                  aspect-ratio: 16 / 9;
+                }
 
                 &-button{
                     width: 96px;
