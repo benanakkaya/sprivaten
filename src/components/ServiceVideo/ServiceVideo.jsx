@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {BsFillPlayFill} from "react-icons/bs"
 
 const ServiceVideo = () => {
   return (
@@ -15,7 +16,7 @@ const ServiceVideo = () => {
             <div className="service-video-content">
                 <div className="service-video-content-cover">
                     <span className="service-video-content-cover-button">
-                    ►
+                    <BsFillPlayFill/>
                     </span>
                 </div>
             </div>
