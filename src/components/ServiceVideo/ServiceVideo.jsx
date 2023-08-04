@@ -1,5 +1,5 @@
 import React from 'react'
-import {BsFillPlayFill} from "react-icons/bs"
+import {FaPlay} from "react-icons/fa"
 
 const ServiceVideo = () => {
   return (
@@ -16,7 +16,7 @@ const ServiceVideo = () => {
             <div className="service-video-content">
                 <div className="service-video-content-cover">
                     <span className="service-video-content-cover-button">
-                    <BsFillPlayFill />
+                    <FaPlay />
                     </span>
                 </div>
             </div>
